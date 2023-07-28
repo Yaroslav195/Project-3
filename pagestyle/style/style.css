@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+.body {
+  display: block;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgb(240, 255, 255);
+  background-image: url(../images/img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: black;
+  opacity: 0.45;
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+.header {
+  background-color: cadetblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 45px;
+}
+.box-for {
+  border-style: double groove;
+  height: 70vh;
+  border-radius: 10px;
+  border-color: chartreuse;
+  margin-bottom: 20px;
+  border-top-color: blue;
+  border-bottom-color: darkgoldenrod;
+  background-image: url(../images/sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.position {
+  color: aquamarine;
+  display: inline-block;
+  padding-top: 30vh;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item {
+  color: gold;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  color: gold;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: indigo;
+  transition: 5ms;
+  border-radius: 10px;
+}
+.link:hover {
+  background-color: maroon;
+  transform: rotate(-10deg);
+  transition: 10ms;
+}
+.maintxt {
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+.footer {
+  text-align: center;
+  background-color: cadetblue;
+  height: 8vh;
+  padding-top: 20px;
+  width: 100%;
+}
+.article-name {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: tomato;
+}
+.details {
+  padding: 7px 5px;
+  background-color: burlywood;
+  color: indigo;
+}
+.next:hover {
+  text-decoration: none;
+  color: darkslategray;
+}
+.comments-list {
+  color: gold;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: rgb(34, 178, 75);
+  text-align: center;
+}
+h2 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgb(34, 178, 75);
+}
+.up-first-letter::first-letter {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: fuchsia;
+  font-size: 25px;
+}
+.navtext {
+  color: greenyellow;
+}
+.li-name {
+  width: 100%;
+  background-color: darkmagenta;
+  font-size: 24px;
+  padding: 15px 25px;
+  list-style: url(../icons/list1-add.png);
+  list-style-position: inside;
+}
+.li-list {
+  background-color: greenyellow;
+  list-style: url(../icons/list.png);
+  font-size: 17px;
+  padding: 7px 5px;
+  margin-bottom: 5px;
+}
+.new-li-list {
+  background-color: greenyellow;
+  font-size: 17px;
+  list-style: url(../icons/new.png);
+  padding: 7px 5px;
+  margin-bottom: 5px;
+}
+.new-li-list::after {
+  background: blue;
+  content: "new";
+  color: aliceblue;
+  padding: 3px;
+  margin-left: 10px;
+}
+.border-decoration {
+  border-style: ridge;
+  border-color: red;
+  border-width: 3px;
+}
+.border-decoration:hover {
+  border-color: transparent;
+}
+.vertical {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: space-around;
+  justify-content: center;
+}
+.text {
+  color: yellow;
+  font-size: 22px;
+}
+.texture {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+
+  background-image: url(../images/texture-jpg.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+.info {
+  text-align: center;
+  color: gold;
+}
+.contact-form {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.file-st {
+  padding-left: 0;
+}
+.form-gender {
+  margin: 10px 0 5px;
+}
+.form-gender:hover {
+  outline: 3px dotted red;
+}
+.capital {
+  text-transform: capitalize;
+}
+.form-lg {
+  margin: 10px 0 5px;
+}
+.form-lg:hover {
+  outline: 3px dotted gold;
+}
+textarea {
+  width: 100%;
+  padding: 10px 0 15px;
+  resize: vertical;
+  min-height: 70px;
+  max-height: 30vh;
+}
+legend {
+  transform: translateY(0);
+  margin: auto;
+  color: gold;
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+fieldset {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: aliceblue;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.25em;
+}
+button,
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}

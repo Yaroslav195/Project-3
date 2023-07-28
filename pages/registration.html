@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../pagestyle/style/style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="../index.html">index</a>
+          </li>
+          <li class="item">
+            <a class="link" href="articles.html">articles</a>
+          </li>
+          <li class="item">
+            <a class="link" href="catalog.html">catalog</a>
+          </li>
+          <li class="item">
+            <a class="link" href="contacts.html">contacts</a>
+          </li>
+          <li class="item">
+            <a class="link" href="gallery.html">gallery</a>
+          </li>
+          <li class="item">
+            <a class="link" href="page-nav.html">page-nav</a>
+          </li>
+          <li class="item">
+            <a class="link" href="registration.html">registration</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <h1>Registration</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset>
+
+          <legend>Основні дані</legend>
+
+          <div class="contact-form">
+            <label for="surname">Прізвище</label>
+            <input class="capital" name="surname" id="surname" placeholder="Прізвище" type="text">
+          </div>
+
+          <div class="contact-form">
+            <label for="name">Ім'я</label>
+            <input class="capital" name="name" id="name" placeholder="Ім'я" type="text">
+          </div>
+
+          <div class="contact-form">
+            <label for="file">Додати фотографію</label>
+            <input class="file-st" name="file" id="file" type="file">
+          </div>
+
+          <div class="contact-form">
+            <label for="email">Email</label>
+            <input name="email" id="email" placeholder="email" type="email">
+          </div>
+
+          <div class="contact-form">
+            <label for="password">Пароль</label>
+            <input name="password" id="password" placeholder="Пароль" type="password">
+          </div>
+
+          <div class="contact-form">
+            <label for="site">Адреса сайту</label>
+            <input name="site" id="site" type="text" value="mysite.name">
+          </div>
+
+          <div class="form-gender">
+            <label for="gender-male">Чоловіча</label>
+            <input name="gender" id="gender-male" type="radio" value="male">
+          </div>
+
+          <div class="form-gender">
+            <label for="gender-female">Жіноча</label>
+            <input name="gender" id="gender-female" type="radio" value="female">
+          </div>
+
+          <div class="contact-form">
+            <label for="date">Дата народження</label>
+            <input name="date" id="date" type="date">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Знання іноземних мов:</legend>
+
+          <div class="form-lg">
+            <input name="language1" id="language1" type="checkbox" value="english">
+            <label for="language1">Англійська</label>
+          </div>
+
+          <div class="form-lg">
+            <input name="language2" id="language2" type="checkbox" value="french">
+            <label for="language2">Французька</label>
+          </div>
+
+          <div class="form-lg">
+            <input name="language3" id="language3" type="checkbox" value="german">
+            <label for="language3">Німецька</label>
+          </div>
+
+          <div class="form-lg">
+            <input name="language4" id="language4" type="checkbox" value="spanish">
+            <label for="language4">Іспанська</label>
+          </div>
+
+          <div class="form-lg">
+            <input name="language5" id="language5" type="checkbox" value="polish">
+            <label for="language5">Польська</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Загальна інформація</legend>
+
+          <div class="contact-form">
+            <label for="about">Про себе</label>
+            <textarea cols="60" name="about" id="about" placeholder="Введіть інформацію про себе..."
+              rows="20"></textarea>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Наступний крок</legend>
+
+          <div class="contact-form">
+            <button type="submit">Зареєструватися</button>
+          </div>
+          <div class="contact-form">
+            <button type="reset">Очистити форму</button>
+          </div>
+
+        </fieldset>
+
+      </form>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        &copy; Yaroslav Chaban
+      </div>
+    </footer>
+
+  </body>
+
+</html>

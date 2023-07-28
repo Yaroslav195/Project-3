@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts Page</title>
+    <link rel="stylesheet" href="../pagestyle/style/style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="../index.html">index</a>
+          </li>
+          <li class="item">
+            <a class="link" href="articles.html">articles</a>
+          </li>
+          <li class="item">
+            <a class="link" href="catalog.html">catalog</a>
+          </li>
+          <li class="item">
+            <a class="link" href="contacts.html">contacts</a>
+          </li>
+          <li class="item">
+            <a class="link" href="gallery.html">gallery</a>
+          </li>
+          <li class="item">
+            <a class="link" href="page-nav.html">page-nav</a>
+          </li>
+          <li class="item">
+            <a class="link" href="registration.html">registration</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <h1>Contacts</h1>
+
+      <div class="info">
+        <p>Адреса: м. Вроцлав, plac Grunwaldzki 23/27</p>
+      </div>
+      <div class="info">
+        <img src="../images/maps-location.png" alt="Map" width="800">
+      </div>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset>
+
+          <legend>Форма зворотного зв'язку</legend>
+
+          <div class="contact-form">
+            <label for="name">Ім'я</label>
+            <input class="capital" name="name" id="name" placeholder="Ім'я" type="text">
+          </div>
+          <div class="contact-form">
+            <label for="telefone">Телефон</label>
+            <input name="telefone" id="telefone" placeholder="Номер телефону" type="tel">
+          </div>
+          <div class="contact-form">
+            <label for="email">E-mail</label>
+            <input name="email" id="email" placeholder="E-mail" type="email">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Запитання</legend>
+
+          <div class="contact-form">
+            <label for="text-questions">Поставити запитання</label>
+            <textarea cols="40" name="text-questions" id="text-questions" rows="20"></textarea>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Наступний крок</legend>
+
+          <div class="contact-form">
+            <button type="submit">Надісдати</button>
+          </div>
+          <div class="contact-form">
+            <button type="reset">Очистити форму</button>
+          </div>
+        </fieldset>
+
+      </form>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        &copy; Yaroslav Chaban
+      </div>
+    </footer>
+
+  </body>
+
+</html>
